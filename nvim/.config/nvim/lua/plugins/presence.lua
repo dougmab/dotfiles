@@ -1,0 +1,14 @@
+return {
+  {
+    "andweeb/presence.nvim",
+    lazy = false,
+    config = function()
+      require("presence").setup({
+        auto_update = true,
+        main_image = "file",
+        neovim_image_text = "Neovim Editor",
+        buttons = true,
+      })
+    end,
+  },
+}
